@@ -272,6 +272,9 @@ Awesome, nor vice versa. **Please do not use brand logos for any purpose except
 to represent the company, product, or service to which they refer.**
 
 
+angular-particle
+MIT
+
 core-js
 MIT
 Copyright (c) 2014-2020 Denis Pushkarev
