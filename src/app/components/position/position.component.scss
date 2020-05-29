@@ -1,0 +1,36 @@
+@import '../../../styles/globals.scss';
+
+.position-content {
+  font-family: 'Play', sans-serif;
+  margin: 16px auto 16px;
+  border: 1px solid lightgrey;
+  height: fit-content;
+  border-radius: 8px;
+  border: none;
+
+  .mat-card-subtitle {
+    display: flex;
+
+    @include respond-to(handhelds) {
+      flex-direction: column;
+    }
+  }
+}
+
+.card-stuff {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+#compName {
+  margin-right: 8px;
+  color: #499f68;
+  text-decoration: none;
+}
+
+#jobType {
+  margin-right: 8px;
+}
+
+#jobInfo {
+  flex-grow: 1;
+}

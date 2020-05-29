@@ -1,0 +1,35 @@
+<mat-card class="content mat-elevation-z0">
+  <mat-card-header>
+    <mat-card-title>Get in Touch</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="card-content">
+    <div class="footer-body">
+      <div class="top-footer-area">
+        <div class="social-section">
+          Lets connect:
+          <a
+            *ngFor="let contact of contacts"
+            href="{{ contact.urlLink }}"
+            target="_blank"
+          >
+            <fa-icon [icon]="['fab', contact.title]"></fa-icon>
+            {{ contact.username }}
+          </a>
+        </div>
+        <div class="email-section">
+          Prefer Email:
+          <div class="email-field">
+            <span style="display: flex; flex-grow: 1;">{{ email }}</span
+            ><fa-icon
+              [icon]="['far', 'copy']"
+              (click)="copyMail(email)"
+            ></fa-icon>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-section">
+        <fa-icon [icon]="['far', 'copyright']"></fa-icon> John Wayodi, 2020.
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

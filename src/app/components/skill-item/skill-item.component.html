@@ -1,0 +1,21 @@
+<mat-card class="content mat-elevation-z3">
+  <mat-card-content class="card-content">
+    <div class="skill-image">
+      <div *ngIf="skill.asset; else elseBlock">
+        <mat-icon svgIcon="{{ skill.language }}"></mat-icon>
+      </div>
+      <ng-template #elseBlock>
+        <fa-icon [icon]="['fab', skill.iconName]"></fa-icon>
+      </ng-template>
+    </div>
+    <div class="skill-content">
+      <p>{{ skill.language | titlecase }}</p>
+      <mat-progress-bar
+        class="progress-section"
+        mode="determinate"
+        value="{{ skill.level }}"
+        color="primary"
+      ></mat-progress-bar>
+    </div>
+  </mat-card-content>
+</mat-card>

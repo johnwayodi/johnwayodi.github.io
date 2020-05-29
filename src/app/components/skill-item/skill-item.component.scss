@@ -1,0 +1,56 @@
+@import '../../../styles/globals.scss';
+
+.content {
+  height: 32px;
+  width: 120px;
+  border-radius: 4px;
+
+  @include respond-to(handhelds) {
+    margin: 4px 4px 4px 4px;
+    width: 85%;
+  }
+
+  @include respond-to(medium-screens) {
+    margin: 2px 4px 2px 4px;
+  }
+
+  @include respond-to(wide-screens) {
+    margin: 4px 8px 4px 8px;
+  }
+}
+
+.card-content {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  height: fit-content;
+}
+
+.skill-content {
+  font-family: 'Maven Pro', sans-serif;
+  text-align: start;
+  font-size: 15px;
+  line-height: 3px;
+  height: 100%;
+  width: 100%;
+  flex-grow: 2;
+
+  p {
+    margin-top: 8px;
+  }
+}
+
+.skill-image {
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  text-align: center;
+  flex-grow: 1;
+  margin-right: 8px;
+}
+
+.mat-icon {
+  margin: auto 8px auto -4px;
+  height: 34px;
+  width: 34px;
+}

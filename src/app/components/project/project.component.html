@@ -1,0 +1,36 @@
+<mat-card class="content mat-elevation-z3">
+  <mat-card-content class="project-details">
+    <div
+      class="project-image"
+      [ngStyle]="{
+        'background-image': 'url(' + project.imagePath + ')',
+        'background-size': 'cover',
+        'background-repeat': 'no-repeat'
+      }"
+    ></div>
+    <div class="info-content">
+      <h3 style="height: 12px;">
+        {{ project.title }}
+      </h3>
+      <div class="project-links">
+        <a href="{{ project.projectUrl }}" target="_blank">
+          <span>
+            View<fa-icon [icon]="['fas', 'external-link-alt']"></fa-icon>
+          </span>
+        </a>
+        <a href="{{ project.repoUrl }}" target="_blank">
+          <span> Project<fa-icon [icon]="['fab', 'github']"></fa-icon> </span>
+        </a>
+      </div>
+      {{ project.description }}
+      <ul>
+        <li *ngFor="let highlight of project.highlights">{{ highlight }}</li>
+      </ul>
+    </div>
+    <div class="project-footer">
+      <mat-card class="stack-item" *ngFor="let item of project.stack">
+        {{ item }}
+      </mat-card>
+    </div>
+  </mat-card-content>
+</mat-card>

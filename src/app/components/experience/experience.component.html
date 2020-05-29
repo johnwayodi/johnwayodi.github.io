@@ -1,0 +1,11 @@
+<mat-card class="content mat-elevation-z0">
+  <mat-card-header>
+    <mat-card-title>Experience</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngFor="let position of experience; last as last">
+      <app-position [position]="position"></app-position>
+      <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
+    </div>
+  </mat-card-content>
+</mat-card>

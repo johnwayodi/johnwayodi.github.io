@@ -1,0 +1,24 @@
+@import '../../../styles/globals.scss';
+
+.content {
+  max-width: 1440px;
+  height: fit-content;
+  margin: 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Play', sans-serif;
+
+  @include respond-to(medium-screens) {
+    padding-top: 20px;
+  }
+
+  @include respond-to(wide-screens) {
+    padding-top: 20px;
+  }
+}
+
+.card-stuff {
+  font-family: 'Maven Pro', sans-serif;
+  border-radius: 8px;
+}

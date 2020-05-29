@@ -1,0 +1,30 @@
+@import '../../../styles/globals.scss';
+
+.projects-content {
+  max-width: 1440px;
+  height: fit-content;
+  margin: 0;
+  border-radius: 0;
+  font-family: 'Play', sans-serif;
+
+  @include respond-to(medium-screens) {
+    padding-top: 20px;
+  }
+
+  @include respond-to(wide-screens) {
+    padding-top: 20px;
+  }
+}
+
+.project-list {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include respond-to(handhelds) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}

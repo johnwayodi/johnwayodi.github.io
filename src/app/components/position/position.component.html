@@ -1,0 +1,23 @@
+<mat-card class="position-content mat-elevation-z3">
+  <mat-card-title style="font-size: 18px;">{{ position.title }}</mat-card-title>
+  <mat-card-subtitle>
+    <span id="jobInfo">
+      <a href="{{ position.companyLink }}" target="_blank" id="compName">{{
+        position.companyName
+      }}</a>
+      <span id="jobType">{{ position.employmentType }}</span>
+      <span id="duration">{{ position.duration }}</span>
+    </span>
+    <span id="dateStuff"
+      >{{ position.startDate }} - {{ position.endDate }}</span
+    >
+  </mat-card-subtitle>
+  <mat-card-content class="card-stuff">
+    <p>
+      {{ position.summary }}
+    </p>
+    <ul>
+      <li *ngFor="let highlight of position.highlights">{{ highlight }}</li>
+    </ul>
+  </mat-card-content>
+</mat-card>

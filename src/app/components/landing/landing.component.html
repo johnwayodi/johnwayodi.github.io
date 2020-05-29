@@ -1,0 +1,25 @@
+<div class="landing-content">
+  <!-- <particles
+    [style]="myStyle"
+    [width]="width"
+    [height]="height"
+    [params]="myParams"
+  ></particles> -->
+  <div class="image-section"></div>
+  <div class="profile-info">
+    <h1>{{ user.name }}</h1>
+    <h3>{{ user.title }}</h3>
+    <p>{{ user.quote }}</p>
+    <div class="social-info">
+      <a href="{{ user.linkedin }}" target="_blank">
+        <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+      </a>
+      <a href="{{ user.github }}" target="_blank">
+        <fa-icon [icon]="['fab', 'github']"></fa-icon>
+      </a>
+      <a href="{{ user.twitter }}" target="_blank">
+        <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
+      </a>
+    </div>
+  </div>
+</div>
